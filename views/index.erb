@@ -1,0 +1,13 @@
+<div class="kitten" style="border: red dashed 4px">
+  <h1>Hello! I'm a baby cat</h1>
+  <% if @name %>
+    <h1>My name is <%= @name %></h1>
+  <% else %>
+    <h2>Enter a name</h2>
+    <form action="/named-cat">
+      <input type="text" name="name">
+      <input type="submit" value="Submit"
+    </form>
+  <% end %>
+  <img src="https://www.vets4pets.com/siteassets/species/cat/kitten/tiny-kitten-in-sunlight.jpg?w=585&scale=down" alt="kitten" width="50%">
+</div>
